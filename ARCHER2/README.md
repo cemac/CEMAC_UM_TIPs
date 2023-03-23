@@ -26,7 +26,7 @@ weird FCM make permission error... not always ? Sometimes runs fine ?
 
 # ARCHER 2
 
-[CMS UM on archer 2 pages](http://cms.ncas.ac.uk/wiki/Archer2#UM)
+[CMS UM on archer 2 pages](https://cms.ncas.ac.uk/archer2/unified-model/)
 
 Note nothing will work out of the box.
 
@@ -128,19 +128,18 @@ CAP9 path must also be altered in:
 source=/work/y07/shared/umshared/CAP9.1/build/bin
 ```
 
-*UM source code mods*
+# UM source code mods #
 
 Depending on which version of the UM more or less modifications will be required:
 
-find the um source closest to your suites from this list:
+## CCE fixes ##
 
-[http://cms.ncas.ac.uk/wiki/Archer2](http://cms.ncas.ac.uk/wiki/Archer2)
+[UKCA CC12 fixes](https://code.metoffice.gov.uk/trac/um/ticket/6464)
 
-and find the corresponding branch on the [trac um browser](https://code.metoffice.gov.uk/trac/um/browser)
 
-find the revision log for the "cce12 fixes"
+An easy way to find the required mods is to browse [Jeff Coles UM code](https://code.metoffice.gov.uk/trac/um/browser/main/branches/dev/jeffcole) select the version you're interested in and search the revision log for the "cce12 fixes" in Jeff Coles code. View the revision log and view the changes related the CCE12
 
-e.g. for vn 11.2 the following files need to be modified
+e.g. for vn 11.2 the following files need to be modified 
 
 ```
 atmosphere/AC_assimilation/getobs.F90 (4 diffs)
@@ -150,6 +149,8 @@ atmosphere/UKCA/ukca_volume_mode.F90 (6 diffs)
 atmosphere/boundary_layer/bdy_expl2.F90 (2 diffs)
 utility/qxreconf/rcf_h_int_nearest_mod.F90 (2 diffs)
 ```
+
+This is highlighted here: [UKCA and other Code fixes examples](https://code.metoffice.gov.uk/trac/um/changeset?reponame=&new=104769%40main%2Fbranches%2Fdev%2Fjeffcole%2Fvn11.2_archer2_fixes&old=61261%40main%2Ftrunk)
 
 ### Troubleshooting:
 
