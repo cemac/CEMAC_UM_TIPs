@@ -57,10 +57,20 @@ and `meta/rose-meta.conf` swapping `range=60:172800` to `range=1:172800`
 * Nesting Suite archer suite had reference to short partition which does not exist short q is accessed by short reservation on standard partition
 * short q limited to 1 running 1 queuing
 
+# Archiving 
 
+There are various methods for archiving specifical for JASMIN :
+
+suite u-cy045 is an example of a nested suite with auto archiving of data
+You'll need to follow the steps below for 30 day globus credentials
+* [https://help.jasmin.ac.uk/article/4997-transfers-from-archer2](https://help.jasmin.ac.uk/article/4997-transfers-from-archer2)
+* [https://help.jasmin.ac.uk/article/3808-data-transfer-tools-gridftp-cert-based-auth](https://help.jasmin.ac.uk/article/3808-data-transfer-tools-gridftp-cert-based-auth)
+
+Here an extra rose task has been added to run at the end of each cycle to archive the data to a GWS folder.
+
+*coming soon UM13 RA3 nested suite barebones with archer2 era5 fixes, ants and archiving enabled*
 
 # Archer2 new 23 cabinet system
-
 
 ## Host Key verification failed / submit failed
 
@@ -151,6 +161,12 @@ utility/qxreconf/rcf_h_int_nearest_mod.F90 (2 diffs)
 ```
 
 This is highlighted here: [UKCA and other Code fixes examples](https://code.metoffice.gov.uk/trac/um/changeset?reponame=&new=104769%40main%2Fbranches%2Fdev%2Fjeffcole%2Fvn11.2_archer2_fixes&old=61261%40main%2Ftrunk)
+
+## CCE 15
+
+make the edits suggested by NCAS CMS [https://cms.ncas.ac.uk/archer2/os-upgrade/](https://cms.ncas.ac.uk/archer2/os-upgrade/)
+
+*coming soon nested suite with CCE15 mods*
 
 ### Troubleshooting:
 
