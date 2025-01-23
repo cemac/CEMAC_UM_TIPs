@@ -61,14 +61,25 @@ and `meta/rose-meta.conf` swapping `range=60:172800` to `range=1:172800`
 
 There are various methods for archiving specifical for JASMIN :
 
-suite u-cy045 is an example of a nested suite with auto archiving of data
+suite u-de766 is an example of a nested suite with auto archiving of data
 You'll need to follow the steps below for 30 day globus credentials
 * [https://help.jasmin.ac.uk/article/4997-transfers-from-archer2](https://help.jasmin.ac.uk/article/4997-transfers-from-archer2)
-* [https://help.jasmin.ac.uk/article/3808-data-transfer-tools-gridftp-cert-based-auth](https://help.jasmin.ac.uk/article/3808-data-transfer-tools-gridftp-cert-based-auth)
-
+* 
 Here an extra rose task has been added to run at the end of each cycle to archive the data to a GWS folder.
 
 *coming soon UM13 RA3 nested suite barebones with archer2 era5 fixes, ants and archiving enabled*
+
+# I/O issues 
+
+If having I/O issues consider using the high performance scratch space, this deletes data automatically so not for any lasting storage.
+
+https://docs.archer2.ac.uk/user-guide/data/#solid-state-nvme-file-system-scratch-storage
+
+to `rose-suite.conf` add the following lines to the top
+````
+root-dir{share}=ln*=/mnt/lustre/a2fs-nvme/work/n02/n02/$USER
+root-dir{work}=ln*=/mnt/lustre/a2fs-nvme/work/n02/n02/$USER
+````
 
 # Archer2 new 23 cabinet system
 
