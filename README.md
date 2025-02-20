@@ -11,11 +11,14 @@
 
 ## Overview
 
-This a a collection of UM tips from the CEMAC team at Leeds. Split into various topics. These tips will be written up alongside existing UM projects so will expand over time. Your fist port of call for information should be [NCAS CMS](http://cms.ncas.ac.uk/wiki/UM)
+This a a collection of UM tips from the CEMAC team at Leeds. Split into various topics. These tips will be written up alongside existing UM projects so will expand over time. Your fist port of call for information should be [NCAS CMS](https://cms.ncas.ac.uk/unified-model/)
 
 ## Contributing
 
 Contributions are very welcome in the form of markdown guides, pdfs, edits to existing guides and pointers to usful information. You can also request a "how to" though this might depend on the team's workload.
+
+## FAQ
+Please see the 'Discussions' tab at the top of the page.
 
 # Acknowledgements #
 
