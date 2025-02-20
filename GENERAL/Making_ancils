@@ -1,0 +1,6 @@
+# Making ancils
+
+# Xancil
+
+seg faults:
+`ulimit -Ss 40000`
