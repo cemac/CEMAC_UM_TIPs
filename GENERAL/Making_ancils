@@ -4,3 +4,6 @@
 
 seg faults:
 `ulimit -Ss 40000`
+
+# ncview
+Cannot read xonv converted ancils. e.g. qrparam.orog.nc will only  be readable via xconv
